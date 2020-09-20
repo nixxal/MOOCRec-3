@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Video-only Example - Record Plugin for Video.js</title>
+
+    <script src="/jquary/jquery.bpopup.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <style>
+        #popup_this {
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            margin-top: -50px;
+            margin-left: -100px;
+            position: fixed;
+            background: #fff;
+            padding: 30px;
+        }
+        
+        .b-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            color: #fff;
+            background: #ff0000;
+            padding: 5px 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="popup_this">
+        <span class="button b-close">
+            <span>X</span>
+        </span>
+        <h3>A nice ad goes here!</h3>
+        <p>Nulla at nunc posuere, dictum sem sed, tristique mi.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#popup_this').bPopup();
+        });
+    </script>
+
+
+</body>
+
+
+
+</html>
